@@ -23,11 +23,11 @@ ipl_chatbot/
 
 ## ⚡ Features
 
-✅ Ask IPL-related questions 🏏
-✅ Uses PDF dataset + Gemini API
-✅ Simple chatbox UI (HTML + Flask)
-✅ Secure API keys with .env
-✅ Easy to run locally
+- Ask IPL-related questions 🏏
+- Uses PDF dataset + Gemini API
+- Simple chatbox UI (HTML + Flask)
+- Secure API keys with .env
+- Easy to run locally
 
 ## 🖼️ Demo Screenshot
 <img width="1915" height="965" alt="image" src="https://github.com/user-attachments/assets/c036c917-e6e6-4bf5-9d12-986bc80c2d82" />
