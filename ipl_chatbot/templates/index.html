@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPL Chatbot</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .chat-box { width: 50%; margin: auto; }
+        .message { margin: 10px 0; }
+        .user { font-weight: bold; color: blue; }
+        .bot { font-weight: bold; color: green; }
+        input { width: 80%; padding: 10px; }
+        button { padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="chat-box">
+        <h2>IPL Chatbot 🏏</h2>
+        <div id="chat"></div>
+        <input type="text" id="message" placeholder="Ask me about IPL...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        async function sendMessage() {
+            const message = document.getElementById("message").value;
+            if (!message) return;
+
+            const chatDiv = document.getElementById("chat");
+            chatDiv.innerHTML += `<div class="message user">You: ${message}</div>`;
+
+            const response = await fetch("/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message })
+            });
+
+            const data = await response.json();
+            chatDiv.innerHTML += `<div class="message bot">Bot: ${data.answer}</div>`;
+        }
+    </script>
+</body>
+</html>
