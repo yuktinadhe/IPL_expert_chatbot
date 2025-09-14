@@ -12,20 +12,15 @@ It uses **RAG (Retrieval-Augmented Generation)** with FAISS + LangChain + Google
 
 ## 📂 Project Structure
 
-ipl_chatbot/
+**ipl_chatbot/
 │── data/
 │ └── IPL_QA_Dataset.pdf         # Knowledge base (PDF)
-
 │── app.py         # Flask backend
-
 │── chatbot.py         # Core chatbot logic (PDF + Gemini API)
-
 │── templates/
 │ └── index.html         # Simple chat UI
-
 │── requirements.txt         # Python dependencies
-
-│── .gitignore         # Ignored files (.env, pycache)
+│── .gitignore         # Ignored files (.env, pycache)**
 
 ## ⚡ Features
 
