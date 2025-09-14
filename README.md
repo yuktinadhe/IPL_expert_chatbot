@@ -1,4 +1,4 @@
-# 🏏 IPL Chatbot (RAG + Gemini API)
+# 🏏 IPL Expert Chatbot (RAG + Gemini API)
 
 An **AI-powered chatbot** trained on **1000 IPL Q&A pairs**.  
 It uses **RAG (Retrieval-Augmented Generation)** with FAISS + LangChain + Google Gemini API.
@@ -14,13 +14,13 @@ It uses **RAG (Retrieval-Augmented Generation)** with FAISS + LangChain + Google
 
 ipl_chatbot/
 │── data/
-│ └── IPL_QA_Dataset.pdf # Knowledge base (PDF)
-│── app.py # Flask backend
-│── chatbot.py # Core chatbot logic (PDF + Gemini API)
+│ └── IPL_QA_Dataset.pdf         # Knowledge base (PDF)
+│── app.py         # Flask backend
+│── chatbot.py         # Core chatbot logic (PDF + Gemini API)
 │── templates/
-│ └── index.html # Simple chat UI
-│── requirements.txt # Python dependencies
-│── .gitignore # Ignored files (.env, pycache)
+│ └── index.html         # Simple chat UI
+│── requirements.txt         # Python dependencies
+│── .gitignore         # Ignored files (.env, pycache)
 
 ## ⚡ Features
 
