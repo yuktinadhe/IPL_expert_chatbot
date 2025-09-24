@@ -11,7 +11,7 @@ It uses **RAG (Retrieval-Augmented Generation)** with FAISS + LangChain + Google
 - Easy to extend with more datasets.
 
 ## 📂 Project Structure
-
+```
 **ipl_chatbot/
 │── data/
 │ └── IPL_QA_Dataset.pdf         # Knowledge base (PDF)
@@ -21,7 +21,7 @@ It uses **RAG (Retrieval-Augmented Generation)** with FAISS + LangChain + Google
 │ └── index.html         # Simple chat UI
 │── requirements.txt         # Python dependencies
 │── .gitignore         # Ignored files (.env, pycache)**
-
+```
 ## ⚡ Features
 
 - Ask IPL-related questions 🏏
